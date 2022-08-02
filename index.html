@@ -1,1 +1,72 @@
-Hello!
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Alex Tonkonozhenko</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+
+    body {
+      font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background: #111111;
+      color: #4bb5c1;
+      font-weight: 300;
+    }
+
+    h1 {
+      border-bottom: 1px solid #4bb5c1;
+    }
+
+    a, a:link, a:visited, a:hover, a:active {
+      color: #4bb5c1;
+      text-decoration: none;
+    }
+
+    .content {
+      text-align: center;
+      padding-top: 50pt;
+    }
+
+    .links {
+
+    }
+  </style>
+</head>
+<body>
+<div class="content">
+  <h1>Alex Tonkonozhenko</h1>
+  <div class="links">
+    <a href="//github.com/tonkonozhenko">GitHub</a>
+    /
+    <a href="/cv/">CV</a>
+    /
+    <a href="//linkedin.com/in/atonkonozhenko">LinkedIn</a>
+    /
+    <a href="#" id="js-secret">Mail</a>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var e = atob("YWxleEB0b25rb25vemhlbmtvLmNvbQ=="),
+        a = document.getElementById("js-secret");
+    //a.innerHTML = e;
+    a.href = "mailto:" + e;
+  })()
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42691193-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>
